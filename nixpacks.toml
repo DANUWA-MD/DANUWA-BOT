@@ -3,13 +3,16 @@ packages = [
   "python3",
   "make",
   "gcc",
-  "g++"
+  "g++",
+  "pkg-config",
+  "libc-dev",
+  "linux-headers"
 ]
 
 [phases.build]
 cmds = [
   "ln -sf $(which python3) /usr/bin/python || true",
-  "npm install"
+  "npm install --unsafe-perm"
 ]
 
 [phases.start]
