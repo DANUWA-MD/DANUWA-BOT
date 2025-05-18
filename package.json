@@ -51,9 +51,6 @@
     "openai": "^4.98.0",
     "tesseract.js": "^6.0.1",
     "pdfkit": "^0.17.1"
-      },
-  "resolutions": {
-    "libsignal-node": "https://github.com/adiwajshing/libsignal-node"
 
   }
 }
