@@ -1,5 +1,10 @@
 [phases.setup]
-packages = ["python3", "make", "gcc", "g++"]
+packages = [
+  "python3",
+  "make",
+  "gcc",
+  "g++"
+]
 
 [phases.build]
 cmds = [
