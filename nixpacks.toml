@@ -9,11 +9,14 @@ packages = [
   "linux-headers"
 ]
 
-[phases.build]
+[phases.install]
 cmds = [
   "ln -sf $(which python3) /usr/bin/python || true",
-  "yarn install"  # ← No --frozen-lockfile, allows yarn.lock to update
+  "yarn install"
 ]
+
+[phases.build]
+cmds = []
 
 [phases.start]
 cmd = "yarn start"
