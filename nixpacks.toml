@@ -1,8 +1,11 @@
 [phases.setup]
-cmds = ["apk add --no-cache python3", "ln -sf python3 /usr/bin/python"]
+commands = [
+  "nix-env -iA nixpkgs.python3",
+  "ln -sf $(which python3) /usr/bin/python || true"
+]
 
 [phases.build]
-cmds = ["npm install"]
+commands = ["npm install"]
 
 [phases.start]
-cmd = "npm start"
+command = "npm start"
