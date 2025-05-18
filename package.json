@@ -11,7 +11,7 @@
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@vreden/youtube_scraper": "^1.2.7",
-    "@whiskeysockets/baileys": "6.6.0",
+    "@whiskeysockets/baileys": "6.4.0",
     "@xaviabot/fb-downloader": "^1.0.14",
     "api-dylux": "^1.8.5",
     "axios": "^1.9.0",
