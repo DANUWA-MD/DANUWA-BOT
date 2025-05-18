@@ -6,15 +6,13 @@ packages = [
   "g++",
   "pkg-config",
   "libc-dev",
-  "linux-headers",
-  "curl",
-  "yarn"
+  "linux-headers"
 ]
 
 [phases.build]
 cmds = [
   "ln -sf $(which python3) /usr/bin/python || true",
-  "yarn install"
+  "yarn install"  # ← No --frozen-lockfile, allows yarn.lock to update
 ]
 
 [phases.start]
