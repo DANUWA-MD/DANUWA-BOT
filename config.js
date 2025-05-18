@@ -7,7 +7,7 @@ function convertToBool(text, fault = 'true') {
 
 // Default config for GitHub Actions (or manual edits)
 const defaultConfig = {
-  SESSION_ID: "jZhiGara#S666qMwuJsm2y0I0M1SY50GpNfkFxg-A-6uLNpLcHR0", // Users put their session ID here if NOT using env vars
+  SESSION_ID: "", // Users put their session ID here if NOT using env vars
   ALIVE_IMG: "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true",
   ALIVE_MSG: "*Hello👋 DANUWA-MD Is Alive Now😍*",
   MOVIE_API_KEY: "sky|51c173810f25c71beb51b431867187b736b89c28",
