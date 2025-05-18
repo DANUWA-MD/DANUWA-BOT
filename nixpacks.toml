@@ -1,8 +1,11 @@
 [phases.setup]
-packages = ["python3"]
+packages = ["python3", "make", "gcc", "g++"]
 
 [phases.build]
-cmds = ["npm install"]
+cmds = [
+  "ln -sf $(which python3) /usr/bin/python || true",
+  "npm install"
+]
 
 [phases.start]
 cmd = "npm start"
