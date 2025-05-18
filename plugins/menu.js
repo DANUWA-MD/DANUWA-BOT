@@ -4,7 +4,7 @@ const config = require("../config");
 cmd(
   {
     pattern: "menu",
-    react: "⚙"
+    react: "⚙",
     desc: "Displays all available commands",
     category: "main",
     filename: __filename,
