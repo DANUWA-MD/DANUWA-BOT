@@ -1,0 +1,46 @@
+{
+  "name": "DANUWA-BOT",
+  "envVars": {
+    "SESSION_ID": {
+      "description": "Your MEGA.nz session ID or WhatsApp session ID",
+      "required": true
+    },
+    "BOT_OWNER": {
+      "description": "Owner number in international format (e.g., 94712345678)",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API key (optional)",
+      "required": false
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your Google Gemini API key (optional)",
+      "required": false
+    },
+    "ALIVE_IMG": {
+      "description": "Image URL for the .alive command",
+      "required": false,
+      "defaultValue": "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true"
+    },
+    "ALIVE_MSG": {
+      "description": "Alive message text shown in .alive",
+      "required": false,
+      "defaultValue": "Hello👋 DANUWA-MD Is Alive Now😍"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Set to true to auto-read messages",
+      "required": false,
+      "defaultValue": "true"
+    },
+    "MOVIE_API_KEY": {
+      "description": "API key for movie search plugin",
+      "required": false,
+      "defaultValue": "sky|51c173810f25c71beb51b431867187b736b89c28"
+    },
+    "OWNER_NUMBER": {
+      "description": "Comma-separated owner numbers (e.g., 94712345678,94711111111)",
+      "required": false,
+      "defaultValue": "94776121326"
+    }
+  }
+}
