@@ -6,6 +6,7 @@ packages = [
   "g++",
   "pkg-config",
   "libc-dev",
+  "ffmpeg",
   "linux-headers"
 ]
 
