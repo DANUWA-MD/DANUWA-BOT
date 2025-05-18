@@ -17,3 +17,6 @@ cmds = [
 
 [phases.start]
 cmd = "npm start"
+
+[env]
+PYTHON = "/usr/bin/python"
