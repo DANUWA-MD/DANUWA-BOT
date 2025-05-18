@@ -1,0 +1,47 @@
+{
+  "plugins": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "required": true,
+      "description": "Your WhatsApp session ID (Baileys MD format)"
+    },
+    "ALIVE_IMG": {
+      "required": false,
+      "default": "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true",
+      "description": "Alive command image URL"
+    },
+    "ALIVE_MSG": {
+      "required": false,
+      "default": "*Hello👋 DANUWA-MD Is Alive Now😍*",
+      "description": "Custom alive message"
+    },
+    "MOVIE_API_KEY": {
+      "required": false,
+      "default": "sky|51c173810f25c71beb51b431867187b736b89c28",
+      "description": "API key for movie plugin (Sinhalasub)"
+    },
+    "OPENAI_API_KEY": {
+      "required": false,
+      "description": "Your OpenAI API key (if using ChatGPT features)"
+    },
+    "GEMINI_API_KEY": {
+      "required": false,
+      "description": "Google Gemini API key"
+    },
+    "BOT_OWNER": {
+      "required": true,
+      "description": "Owner's number (e.g., 94712345678)"
+    },
+    "OWNER_NUMBER": {
+      "required": true,
+      "description": "Comma-separated list of owner numbers"
+    },
+    "AUTO_READ_STATUS": {
+      "required": false,
+      "default": "true",
+      "description": "Enable or disable auto status reading (true/false)"
+    }
+  }
+}

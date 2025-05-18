@@ -1,0 +1,22 @@
+[phases.setup]
+packages = [
+  "python3",
+  "make",
+  "gcc",
+  "g++",
+  "pkg-config",
+  "libc-dev",
+  "linux-headers"
+]
+
+[phases.install]
+cmds = [
+  "ln -sf $(which python3) /usr/bin/python || true",
+  "yarn install"
+]
+
+[phases.build]
+cmds = []
+
+[phases.start]
+cmd = "yarn start"
