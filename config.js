@@ -12,20 +12,23 @@ function convertToBool(text, fault = 'true') {
 
 
 const defaultConfig = {
-  SESSION_ID: "", // Put your session id here
+  SESSION_ID: "2Fo3jJ7S#xt6sGp-OaYnuVGqQW32UVZwqKaCaoei1TFotUiXmj8A", // Put your session id here
   ALIVE_IMG: "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true",
   ALIVE_MSG: "*Hello👋 DANUWA-MD Is Alive Now😍*", // Change alive msg from here
   OPENAI_API_KEY: "",// Add OPENAI API key here
   GEMINI_API_KEY: "", // Add Gemini API key here
   REMOVE_BG_API_KEY:"", // Add removebg API key here
   WEATHER_API_KEY: "", // Add your weather API key here
-  BOT_OWNER: "94776121326", // Replace your bot owner number here with 94(country code)
-  ownerNumber: ["94776121326"], // Replace your bot owner number here (same as bot owner number)
-  AUTO_STATUS_REACT: "true",
-  AUTO_STATUS_REPLY: "true",
+  SKYMANTION_API_KEY: "sky|cb585353a4e0ec996e448d1ccc484053e89020e2",//Add your skymantion API key here
+  BOT_OWNER: "94764288067", // Replace your bot owner number here with 94(country code)
+  ownerNumber: ["94764288067"], // Replace your bot owner number here (same as bot owner number)
+  AUTO_STATUS_REACT: "false",
+  AUTO_STATUS_REPLY: "false",
   AUTO_STATUS_SEEN: "true",
   MODE: "public", // 'private', 'public'
 };
+
+
 
 //*******************************************************************************************************************************************************
 
@@ -40,6 +43,7 @@ module.exports = {
   GEMINI_API_KEY: process.env.GEMINI_API_KEY || defaultConfig.GEMINI_API_KEY,
   REMOVE_BG_API_KEY: process.env.REMOVE_BG_API_KEY || defaultConfig.REMOVE_BG_API_KEY, 
   WEATHER_API_KEY: process.env.WEATHER_API_KEY || defaultConfig.WEATHER_API_KEY,
+  SKYMNTION_API_KEY: process.env.SKYMANTION_API_KEY ||defaultConfing.SKYMANTION_API_KEY,
   BOT_OWNER: process.env.BOT_OWNER || defaultConfig.BOT_OWNER,
   ownerNumber: process.env.ownerNumber
     ? process.env.ownerNumber.split(",")
